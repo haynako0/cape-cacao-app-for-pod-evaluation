@@ -1,0 +1,66 @@
+name: cape
+description: "A Flutter-based deep learning mobile application built to detect cacao pod diseases in real time using YOLOv11s object detection."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  camera: ^0.11.3
+  path_provider: ^2.1.5
+  image_picker: ^1.2.0
+  permission_handler: ^12.0.1
+  photo_manager: ^3.7.1
+  provider: ^6.1.5+1
+  image: ^4.5.4
+  onnxruntime: 1.4.1
+  flutter_sound: ^9.28.0
+  logger: ^2.6.2
+  shared_preferences: ^2.5.3
+  flutter_svg: ^2.2.3
+  fl_chart: ^0.68.0
+  flutter_image_compress: ^2.4.0
+  just_audio: ^0.9.46
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+  change_app_package_name: ^1.5.0
+  license_generator: ^2.1.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/labels.txt
+    - assets/cocoa_info.json
+    - assets/audio/
+    - assets/icons/
+    - assets/models/
+  fonts:
+    - family: CustomFont1
+      fonts:
+        - asset: assets/fonts/Font1.ttf
+
+    - family: CustomFont2
+      fonts:
+        - asset: assets/fonts/Font2.ttf 
+
+    - family: CustomFont3
+      fonts:
+        - asset: assets/fonts/Font3.otf
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
+  min_sdk_android: 21
